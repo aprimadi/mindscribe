@@ -1,0 +1,6 @@
+gen-php
+gen-py
+client/lib/thrift/packages/mindscribe
+log/
+server/config.json
+*.pyc

@@ -1,0 +1,28 @@
+{
+    "version": "1.0",
+    "port": "9090",
+    "stores": [
+        {
+            "category": "user_support_log",
+            "type": "file",
+            "fs_type": "hdfs",
+            "file_path": "hdfs://myhadoopserver:9000/mindscribe/log/user_support_log/",
+            "base_filename": "usup",
+            "max_size": 1000000000,
+            "rotate_period": "daily",
+            "rotate_hour": 0,
+            "rotate_minute": 5
+        },
+        {
+            "category": "user_registration_log",
+            "type": "file",
+            "fs_type": "hdfs",
+            "file_path": "hdfs://myhadoopserver:9000/mindscribe/log/user_registration_log/",
+            "base_filename": "ureg",
+            "max_size": 1000000000,
+            "rotate_period": "daily",
+            "rotate_hour": 0,
+            "rotate_minute": 5
+        }
+    ]
+}
